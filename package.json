@@ -1,0 +1,29 @@
+{
+  "name": "guarded-ai-agent-mcp",
+  "version": "1.0.0",
+  "description": "MERN-style guarded AI agent with live MCP tool discovery and policy enforcement.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node --watch server/index.js",
+    "dev:client": "vite client --host 127.0.0.1",
+    "start": "node server/index.js",
+    "build": "vite build client --outDir ../dist",
+    "preview": "vite preview --host 127.0.0.1",
+    "mcp:notes": "node mcp-servers/notes-server.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "vite": "^7.0.6",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "lucide-react": "^0.468.0"
+  }
+}

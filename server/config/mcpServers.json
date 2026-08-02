@@ -1,0 +1,18 @@
+[
+  {
+    "id": "notes",
+    "name": "Local Notes MCP",
+    "enabled": true,
+    "transport": "stdio",
+    "command": "node",
+    "args": ["mcp-servers/notes-server.js"]
+  },
+  {
+    "id": "context7",
+    "name": "Context7 Docs MCP",
+    "enabled": false,
+    "transport": "stdio",
+    "command": "npx",
+    "args": ["-y", "@upstash/context7-mcp"]
+  }
+]
